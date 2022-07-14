@@ -1,8 +1,10 @@
+import { Button } from "./components/Button/Button"
+
 export const App = () => {
 
   return (
     <div>
-    <p>Hello</p>
+    <Button variant="primary"/>
     </div>
   )
 }
