@@ -1,10 +1,15 @@
-import { Button } from "./components/Button/Button"
+import { ThemeProvider } from 'styled-components'
+import { Button } from './components/Button/Button'
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
 
-export const App = () => {
-
+export function App() {
   return (
-    <div>
-    <Button variant="primary"/>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <Button variant="primary" />
+      <Button variant="secondary" />
+
+      <GlobalStyle />
+    </ThemeProvider>
   )
 }
