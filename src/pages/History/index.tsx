@@ -1,4 +1,4 @@
-import { HistoryContainer, HistoryList } from "./style"
+import { HistoryContainer, HistoryList, Status } from "./style"
 
 export const History = () => {
   return (
@@ -21,42 +21,42 @@ export const History = () => {
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green">Concluido</Status></td>
               </tr>
 
               <tr>
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green" >Concluido</Status></td>
               </tr>
 
               <tr>
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green">Concluido</Status></td>
               </tr>
 
               <tr>
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green">Concluido</Status></td>
               </tr>
 
               <tr>
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green">Concluido</Status></td>
               </tr>
 
               <tr>
                 <td>Tarefa 1</td>
                 <td>1:00</td>
                 <td>10/10/2020</td>
-                <td>Concluido</td>
+                <td><Status statusColor="green">Concluido</Status></td>
               </tr>
             </tbody>
           </table>
