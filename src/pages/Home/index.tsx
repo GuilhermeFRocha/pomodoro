@@ -17,10 +17,9 @@ interface NewCycleFormData {
   minutesAmount: number;
 }
 
-
-
 export function Home() {
-  const { activeCycle ,createNewCycle, interruptCurrentCycle, } = useContext(CyclesContext)
+  const { activeCycle, createNewCycle, interruptCurrentCycle } =
+    useContext(CyclesContext);
 
   const newCycleFormValidationSchema = zod.object({
     task: zod.string().min(1, "Informe a tarefa"),
@@ -37,9 +36,9 @@ export function Home() {
 
   const { handleSubmit, watch, reset } = newCycleForm;
 
-  function handleCreateNewCycle (data: NewCycleFormData) {
-    createNewCycle(data)
-    reset()
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    createNewCycle(data);
+    reset();
   }
 
   const task = watch("task");
